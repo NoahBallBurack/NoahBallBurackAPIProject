@@ -1,0 +1,65 @@
+body{
+    font-family: "Comic Sans MS";
+    background: linear-gradient(to bottom right, mediumpurple, rgba(30, 144, 255, 0.77));
+    color: #ffc25b;
+    text-align: center;
+    font-size: 20px;
+}
+
+#title{
+    margin-top: 1%;
+    font-size: 50px;
+}
+
+#spacer{
+    margin-bottom: 700px;
+}
+
+#result{
+    font-size: 30px;
+}
+
+.left{
+    border-left: 3px solid #ffc25b;
+}
+
+.right, .left{
+    border-top: 3px solid #ffc25b;
+}
+
+#favoriteThings, td{
+    border-radius: 8px;
+    border-collapse: separate;
+    margin: auto;
+}
+
+#addFavorite{
+    color: #ffc25b;
+    background: white;
+}
+
+#startOver,#search{
+    background: white;
+    margin-top: 2.5%;
+}
+
+.lookingFor{
+    margin-top: 1%;
+}
+
+#note{
+    margin-top: 1%;
+}
+
+td{
+    padding: 5px;
+}
+
+#yourInputs{
+    display: none;
+}
+
+#favoriteName{
+    border-radius: 7px;
+    border-collapse: separate;
+}

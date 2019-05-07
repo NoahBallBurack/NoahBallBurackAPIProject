@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Noah Ball-Burack's API Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<div id="title">Personalized Suggestions for You</div>
+
+<span class="lookingFor">I am looking for up to</span>
+<select id="limit" class="w3-hover-gray lookingFor">
+    <option value="1">1</option>
+    <option value="5">5</option>
+    <option value="10">10</option>
+</select>
+<select id="typeDesired" class="w3-hover-gray lookingFor">
+    <option value="authors">author(s)</option>
+    <option value="books">book(s)</option>
+    <option value="games">game(s)</option>
+    <option value="movies">movie(s)</option>
+    <option value="music">band(s)/music artist(s)</option>
+    <option value="podcasts">podcast(s)</option>
+    <option value="shows"> TV show(s)</option>
+    <option value="all">all of the above</option>
+</select>
+<div></div>
+
+<div id="note">Note: Use full names/titles</div>
+
+<span>One of my favorite</span>
+<select id="favoriteType" class="w3-hover-gray">
+    <option value="author:">authors</option>
+    <option value="music:">bands/music artists</option>
+    <option value="book:">books</option>
+    <option value="game:">games</option>
+    <option value="movie:">movies</option>
+    <option value="podcast:">podcasts</option>
+    <option value="show:">TV shows</option>
+</select>
+<span> is:</span>
+<input type="text" id="favoriteName" class="w3-hover-gray">
+<button id="addFavorite" onclick="addFavorite()" class="w3-button w3-circle w3-hover-gray">+</button>
+
+<div id="yourInputs">Your Inputs</div>
+<table id="favoriteThings"></table>
+
+<div id="result"></div>
+
+<button id="search" class="w3-btn w3-round-large w3-hover-gray" onclick="search()">Search</button>
+
+<button id="startOver" onclick="window.location.reload()" class="w3-btn w3-round-large w3-hover-gray">Start Over</button>
+<div id="spacer"></div>
+
+</body>
+</html>
